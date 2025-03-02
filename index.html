@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distribuidora de Refrescos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <img
+          src="images/Imagen1.jpg"
+          alt="Logo de la Distribuidora"
+          class="logo"
+        />
+        <nav class="navbar">
+          <a href="#">Inicio</a>
+          <a href="#quienes-somos">Quiénes Somos</a>
+          <a href="#contacto">Contáctanos</a>
+          <a href="./Catalogo/catalogo.html">Catálogo</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="quienes-somos" class="section">
+      <h2>Quiénes Somos</h2>
+      <p>
+        Somos una empresa dedicada a la distribución de refrescos de alta
+        calidad.
+      </p>
+    </div>
+
+    <div id="contacto" class="section">
+      <h2>Contáctanos</h2>
+      <p>Email: contacto@distribuidora.com</p>
+      <p>Teléfono: +123 456 789</p>
+    </div>
+
+    <div id="ubicacion" class="section">
+      <h2>Ubicación</h2>
+      <p>Nos encontramos en la calle principal #123, Ciudad.</p>
+      <div id="map"></div>
+    </div>
+
+    <script>
+      function initMap() {
+        var location = { lat: 6.639489, lng: -75.462211 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: location,
+          mapTypeControl: false,
+          streetViewControl: false,
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: "Distribuidora Arenales",
+        });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNSoDJkccDO4xEXPhMRd7XAZzqM7mlTYY"
+    ></script>
+  </body>
+</html>

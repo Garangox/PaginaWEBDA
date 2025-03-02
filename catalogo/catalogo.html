@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-container">
+        <nav class="navbar">
+          <a href="./index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="catalogo">
+      <h2>Catálogo</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="coca-cola.jpg" alt="Coca-Cola" />
+          <h3>Coca-Cola 1.5L</h3>
+          <p>Precio: $2.00</p>
+          <button
+            class="agregar-carrito"
+            data-nombre="Coca-Cola 1.5L"
+            data-precio="2.00"
+          >
+            Agregar
+          </button>
+        </div>
+        <div class="producto">
+          <img src="pepsi.jpg" alt="Pepsi" />
+          <h3>Pepsi 2L</h3>
+          <p>Precio: $2.50</p>
+          <button
+            class="agregar-carrito"
+            data-nombre="Pepsi 2L"
+            data-precio="2.50"
+          >
+            Agregar
+          </button>
+        </div>
+        <div class="producto">
+          <img src="fanta.jpg" alt="Fanta" />
+          <h3>Fanta 500ml</h3>
+          <p>Precio: $1.80</p>
+          <button
+            class="agregar-carrito"
+            data-nombre="Fanta 500ml"
+            data-precio="1.80"
+          >
+            Agregar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="carrito-container">
+      <h2>Carrito de Compras</h2>
+      <div id="carrito"></div>
+      <button id="enviar-whatsapp">Enviar Pedido por WhatsApp</button>
+    </div>
+
+    <script src="catalogo.js"></script>
+  </body>
+</html>
