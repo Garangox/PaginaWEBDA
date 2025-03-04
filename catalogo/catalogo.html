@@ -9,61 +9,115 @@
   <body>
     <header class="header">
       <div class="nav-container">
+        <img src="logo.png" alt="Logo de la Distribuidora" class="logo" />
         <nav class="navbar">
-          <a href="./index.html">Inicio</a>
-          <a href="catalogo.html">Catálogo</a>
+          <a href="index.html">Inicio</a>
+          <a href="#">Catálogo</a>
         </nav>
       </div>
     </header>
 
-    <div id="catalogo">
-      <h2>Catálogo</h2>
-      <div class="productos">
-        <div class="producto">
-          <img src="coca-cola.jpg" alt="Coca-Cola" />
-          <h3>Coca-Cola 1.5L</h3>
-          <p>Precio: $2.00</p>
-          <button
-            class="agregar-carrito"
-            data-nombre="Coca-Cola 1.5L"
-            data-precio="2.00"
-          >
-            Agregar
-          </button>
-        </div>
-        <div class="producto">
-          <img src="pepsi.jpg" alt="Pepsi" />
-          <h3>Pepsi 2L</h3>
-          <p>Precio: $2.50</p>
-          <button
-            class="agregar-carrito"
-            data-nombre="Pepsi 2L"
-            data-precio="2.50"
-          >
-            Agregar
-          </button>
-        </div>
-        <div class="producto">
-          <img src="fanta.jpg" alt="Fanta" />
-          <h3>Fanta 500ml</h3>
-          <p>Precio: $1.80</p>
-          <button
-            class="agregar-carrito"
-            data-nombre="Fanta 500ml"
-            data-precio="1.80"
-          >
-            Agregar
-          </button>
-        </div>
+    <h1 class="titulo-catalogo">📦 Catálogo de Productos</h1>
+
+    <button id="toggle-carrito">🛒 Ver Carrito</button>
+    <button id="boton-carrito" onclick="irAlCarrito()">🛒</button>
+
+    <div id="carrito-container" class="oculto">
+      <h2>🛒 Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+
+      <h3>📋 Información del Cliente</h3>
+      <form id="formulario-pedido">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required />
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" required />
+
+        <button type="button" id="enviar-whatsapp">📩 Enviar a WhatsApp</button>
+      </form>
+    </div>
+
+    <div id="productos-container">
+      <div class="producto" data-nombre="Coca-Cola" data-precio="1.50">
+        <img src="coca.jpg" alt="Coca-Cola" />
+        <h3>Coca-Cola</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+      <div class="producto" data-nombre="Fanta" data-precio="1.30">
+        <img src="fanta.jpg" alt="Fanta" />
+        <h3>Fanta</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+      <div class="producto" data-nombre="Pepsi" data-precio="1.40">
+        <img src="pepsi.jpg" alt="Pepsi" />
+        <h3>Pepsi</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+      <div class="producto" data-nombre="Coca-Cola Zero" data-precio="1.50">
+        <img src="imagenes/coca-zero.jpg" alt="Coca-Cola Zero" />
+        <h3>Coca-Cola Zero</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Fanta Uva" data-precio="1.30">
+        <img src="imagenes/fanta-uva.jpg" alt="Fanta Uva" />
+        <h3>Fanta Uva</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Fresca" data-precio="1.20">
+        <img src="imagenes/fresca.jpg" alt="Fresca" />
+        <h3>Fresca</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Manzanita Sol" data-precio="1.40">
+        <img src="imagenes/manzanita.jpg" alt="Manzanita Sol" />
+        <h3>Manzanita Sol</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Pepsi Light" data-precio="1.50">
+        <img src="imagenes/pepsi-light.jpg" alt="Pepsi Light" />
+        <h3>Pepsi Light</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Peñafiel" data-precio="1.10">
+        <img src="imagenes/penafiel.jpg" alt="Peñafiel" />
+        <h3>Peñafiel</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Sprite Zero" data-precio="1.30">
+        <img src="imagenes/sprite-zero.jpg" alt="Sprite Zero" />
+        <h3>Sprite Zero</h3>
+
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Topo Chico" data-precio="1.80">
+        <img src="imagenes/topo-chico.jpg" alt="Topo Chico" />
+        <h3>Topo Chico</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Squirt" data-precio="1.25">
+        <img src="imagenes/squirt.jpg" alt="Squirt" />
+        <h3>Squirt</h3>
+        <button class="agregar-carrito">Agregar</button>
+      </div>
+
+      <div class="producto" data-nombre="Vive 100" data-precio="1.75">
+        <img src="imagenes/vive100.jpg" alt="Vive 100" />
+        <h3>Vive 100</h3>
+        <button class="agregar-carrito">Agregar</button>
       </div>
     </div>
-
-    <div id="carrito-container">
-      <h2>Carrito de Compras</h2>
-      <div id="carrito"></div>
-      <button id="enviar-whatsapp">Enviar Pedido por WhatsApp</button>
-    </div>
-
     <script src="catalogo.js"></script>
   </body>
 </html>
