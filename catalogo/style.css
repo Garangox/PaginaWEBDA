@@ -1,12 +1,12 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #222;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
 }
 
 .header {
-  background-color: #ff6600;
+  background-color:orange;
   padding: 10px;
 }
 
@@ -36,7 +36,7 @@ body {
 }
 
 .producto {
-  background-color: #333;
+  background-color: orange;
   padding: 10px;
   border-radius: 10px;
   width: 200px;
@@ -109,7 +109,7 @@ button {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
 }
 #carrito-container {
-  background-color: #444;
+  background-color: orange;
   padding: 20px;
   border-radius: 10px;
   width: 400px; 
