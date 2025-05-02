@@ -1,7 +1,7 @@
 body {
   background-color: white;
   color: black;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -17,95 +17,147 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: orange;
-  padding: 10px 20px;
+  padding: 12px 30px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  max-width: 100%;
   z-index: 1000;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
-}
-
-.logo {
-  height: 60px;
-  max-width: 150px;
+  transition: all 0.3s ease;
 }
 
 .navbar {
   display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
 .navbar a {
   color: black;
   text-decoration: none;
-  font-size: 16px;
-  padding: 8px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  white-space: nowrap;
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  font-weight: 500;
 }
 
 .navbar a:hover {
   background-color: white;
-  color: black;
+  color: orange;
+  transform: scale(1.05);
+}
+
+.catalogo-btn {
+  background-color: white;
+  color: orange;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(255, 165, 0, 0.4);
+  transition: all 0.3s ease;
+  animation: none;
+}
+
+.catalogo-btn:hover {
+  background-color: orange;
+  color: white;
+  animation: heartbeat 0.8s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+.logo {
+  height: 60px;
+  max-width: 160px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .section {
-  margin-top: 100px;
-  padding: 20px;
+  margin-top: 120px;
+  padding: 30px;
   background-color: orange;
   color: black;
-  border-radius: 10px;
+  border-radius: 15px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(255, 165, 0, 0.3);
+}
+
+#quienes-somos {
+  margin-top: 350px;
+}
+
+#map {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(255, 165, 0, 0.3);
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.imagen img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.imagen img:hover {
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
   .nav-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
   }
 
   .navbar {
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
   }
 
   .navbar a {
-    display: block;
-    text-align: center;
     width: 100%;
-    padding: 10px;
+    text-align: center;
+    padding: 12px 0;
   }
 
   .logo {
     margin-bottom: 10px;
   }
-}
-#map {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2);
-}
-#quienes-somos {
-  margin-top: 300px;
-}
-.imagen {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-.imagen img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }

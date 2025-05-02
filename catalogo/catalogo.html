@@ -9,17 +9,14 @@
   <body>
     <header class="header">
       <div class="nav-container">
-        <img src="logo.png" alt="Logo de la Distribuidora" class="logo" />
-        <nav class="navbar">
-          <a href="index.html">Inicio</a>
-          <a href="#">Catálogo</a>
-        </nav>
+        <button class="navbar-btn" onclick="window.history.back();">Regresar</button>
+        <!-- Otras opciones del navbar si es necesario -->
       </div>
+      
     </header>
 
     <h1 class="titulo-catalogo">📦 Catálogo de Productos</h1>
 
-    <button id="toggle-carrito">🛒 Ver Carrito</button>
     <button id="boton-carrito" onclick="irAlCarrito()">🛒</button>
 
     <div id="carrito-container" class="oculto">
@@ -37,10 +34,47 @@
       </form>
     </div>
 
+    <div>
+      <button onclick="filtrarCategoria('Aguas')">Aguas</button>
+      <button onclick="filtrarCategoria('Refrescos')">Refrescos</button>
+      <button onclick="filtrarCategoria('Cervezas')">Cervezas</button>
+    </div>
+
     <div id="productos-container">
 
     </div>
   
     <script src="catalogo.js"></script>
   </body>
+
+
+  
+  <div id="productos-container"></div>
+  
+  <script>
+  const productos = [
+    { codigo: "10001", nombre: "AGUA AQUARELLA BIDON 8 LITROS", imagen: "ImagesProductos/default.jpg", categoria: "Aguas" },
+    { codigo: "10002", nombre: "SAVILOE 320", imagen: "ImagesProductos/SAVILOE 320.webp", categoria: "Refrescos" },
+    { codigo: "10003", nombre: "AGUA BRISA PET 600", imagen: "ImagesProductos/AGUA BRISA PET 600.webp", categoria: "Aguas" },
+    { codigo: "10004", nombre: "GATORADE FIERCE UVA 500", imagen: "ImagesProductos/GATORADE FIERCE UVA 500.webp", categoria: "Refrescos" },
+    { codigo: "10005", nombre: "CORONA 330", imagen: "ImagesProductos/CORONA 330.webp", categoria: "Cervezas" },
+  ];
+  
+  function filtrarCategoria(categoria) {
+    const container = document.getElementById('productos-container');
+    container.innerHTML = ''; // Limpiar
+  
+    const productosFiltrados = productos.filter(producto => producto.categoria === categoria);
+  
+    productosFiltrados.forEach(producto => {
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}" width="100">
+        <p>${producto.nombre}</p>
+      `;
+      container.appendChild(div);
+    });
+  }
+  </script>
+  
 </html>
