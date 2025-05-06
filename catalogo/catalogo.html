@@ -9,72 +9,64 @@
   <body>
     <header class="header">
       <div class="nav-container">
-        <button class="navbar-btn" onclick="window.history.back();">Regresar</button>
-        <!-- Otras opciones del navbar si es necesario -->
+        <button class="navbar-btn" onclick="window.history.back();">
+          Regresar
+        </button>
       </div>
-      
     </header>
 
-    <h1 class="titulo-catalogo">📦 Catálogo de Productos</h1>
+    <h1 class="titulo-catalogo">Catálogo de Productos</h1>
 
-    <button id="boton-carrito" onclick="irAlCarrito()">🛒</button>
+    <div class="carrito-flex">
+      <div class="carrito-productos">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+      </div>
 
-    <div id="carrito-container" class="oculto">
-      <h2>🛒 Carrito de Compras</h2>
-      <ul id="lista-carrito"></ul>
-      <h3>📋 Información del Cliente</h3>
-      <form id="formulario-pedido">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required />
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" required />
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" required />
-        <button type="button" id="enviar-whatsapp">📩 Enviar a WhatsApp</button>
-      </form>
+      <div class="formulario-carrito">
+        <h3>Información del Cliente</h3>
+        <form id="formulario-pedido">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required />
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" required />
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" required />
+          <button type="button" id="enviar-whatsapp">Enviar a WhatsApp</button>
+        </form>
+      </div>
     </div>
 
-    <div>
-      <button onclick="filtrarCategoria('Aguas')">Aguas</button>
-      <button onclick="filtrarCategoria('Refrescos')">Refrescos</button>
-      <button onclick="filtrarCategoria('Cervezas')">Cervezas</button>
+    <div class="buscador-container">
+      <div class="input-wrapper">
+        <input
+          type="text"
+          id="buscador"
+          class="input-buscador"
+          placeholder="Buscar producto..."
+        />
+      </div>
     </div>
 
-    <div id="productos-container">
+    <div id="productos-container"></div>
 
-    </div>
-  
     <script src="catalogo.js"></script>
+    <script>
+      document
+        .getElementById("buscador")
+        .addEventListener("input", function () {
+          const filtro = this.value.toLowerCase();
+          const productos = document.querySelectorAll(".producto");
+
+          productos.forEach((productos) => {
+            const nombre = productos
+              .querySelector(".nombre-producto")
+              .textContent.toLowerCase();
+            productos.style.display = nombre.includes(filtro)
+              ? "block"
+              : "none";
+          });
+        });
+    </script>
   </body>
-
-
-  
-  <div id="productos-container"></div>
-  
-  <script>
-  const productos = [
-    { codigo: "10001", nombre: "AGUA AQUARELLA BIDON 8 LITROS", imagen: "ImagesProductos/default.jpg", categoria: "Aguas" },
-    { codigo: "10002", nombre: "SAVILOE 320", imagen: "ImagesProductos/SAVILOE 320.webp", categoria: "Refrescos" },
-    { codigo: "10003", nombre: "AGUA BRISA PET 600", imagen: "ImagesProductos/AGUA BRISA PET 600.webp", categoria: "Aguas" },
-    { codigo: "10004", nombre: "GATORADE FIERCE UVA 500", imagen: "ImagesProductos/GATORADE FIERCE UVA 500.webp", categoria: "Refrescos" },
-    { codigo: "10005", nombre: "CORONA 330", imagen: "ImagesProductos/CORONA 330.webp", categoria: "Cervezas" },
-  ];
-  
-  function filtrarCategoria(categoria) {
-    const container = document.getElementById('productos-container');
-    container.innerHTML = ''; // Limpiar
-  
-    const productosFiltrados = productos.filter(producto => producto.categoria === categoria);
-  
-    productosFiltrados.forEach(producto => {
-      const div = document.createElement('div');
-      div.innerHTML = `
-        <img src="${producto.imagen}" alt="${producto.nombre}" width="100">
-        <p>${producto.nombre}</p>
-      `;
-      container.appendChild(div);
-    });
-  }
-  </script>
-  
 </html>

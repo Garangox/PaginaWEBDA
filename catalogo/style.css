@@ -112,3 +112,154 @@ button {
   border-radius: 5px;
   border: none;
 }
+
+.buscador-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.input-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.input-buscador {
+  width: 100%;
+  padding: 12px 20px 12px 45px;
+  font-size: 1rem;
+  border: 2px solid #ffcc00;
+  border-radius: 30px;
+  outline: none;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.input-buscador:focus {
+  border-color: #ffaa00;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+.carrito-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+#lista-carrito {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffcc80; /* naranja claro */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrito li {
+  background-color: #ffe0b2; /* más claro aún */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formulario-carrito {
+  flex: 1;
+  min-width: 300px;
+  background-color: #ffd180; /* naranja suave */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-pedido {
+  display: flex;
+  flex-direction: column;
+}
+
+#formulario-pedido label {
+  margin: 8px 0 4px;
+  font-weight: bold;
+  color: #333;
+}
+
+#formulario-pedido input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff3e0;
+}
+
+#enviar-whatsapp {
+  background-color: #43d854;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#enviar-whatsapp:hover {
+  background-color: #34af43;
+}
+.carrito-productos h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #d35400;
+  font-weight: bold;
+}
+
+.carrito-productos {
+  flex: 1;
+  min-width: 300px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #ffe0b2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .carrito-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carrito-productos,
+  .formulario-carrito {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  #productos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .input-wrapper {
+    width: 95%;
+  }
+}

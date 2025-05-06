@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Distribuidora de Refrescos</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <header class="header">
@@ -15,9 +16,8 @@
           <a href="#quienes-somos">Quiénes Somos</a>
           <a href="#contacto">Contáctanos</a>
         </div>
-        <img src="images/Imagen1.jpg" alt="Logo de tu empresa" class="logo">
+        <img src="images/Imagen1.jpg" alt="Logo de tu empresa" class="logo" />
       </div>
-      
     </header>
 
     <div id="quienes-somos" class="section">
@@ -25,7 +25,6 @@
       <div class="imagen">
         <img src="images/Imagen2.jpg" alt="" />
       </div>
-
       <p>
         Somos una empresa dedicada a la distribución de refrescos de alta
         calidad.
@@ -41,29 +40,17 @@
     <div id="ubicacion" class="section">
       <h2>Ubicación</h2>
       <p>Nos encontramos en la calle principal #123, Ciudad.</p>
-      <div id="map"></div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735.0222506908835!2d-75.46235580291159!3d6.639360703158004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44444329c074ab%3A0x6dc5ca1ff18efd06!2sSanta%20Rosa%20de%20Osos%2C%20Antioquia!5e1!3m2!1ses-419!2sco!4v1746553097834!5m2!1ses-419!2sco"
+          width="600"
+          height="450"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
     </div>
-
-    <script>
-      function initMap() {
-        var location = { lat: 6.639489, lng: -75.462211 };
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 15,
-          center: location,
-          mapTypeControl: false,
-          streetViewControl: false,
-        });
-        var marker = new google.maps.Marker({
-          position: location,
-          map: map,
-          title: "Distribuidora Arenales",
-        });
-      }
-    </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNSoDJkccDO4xEXPhMRd7XAZzqM7mlTYY"
-    ></script>
   </body>
 </html>
