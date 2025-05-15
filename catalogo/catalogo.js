@@ -8,11 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10001",
       nombre: "AGUA AQUARELLA BIDON 8 LITROS",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA AQUARELA BIDON 8 LITROS.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10002",
@@ -138,11 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10027",
       nombre: "AGUA CRISTAL 1 LITRO",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/AGUA CRISTAL 1 LITRO.webp",
-=======
       imagen: "ImagesProductos/AGUA CRISTAL 1 LITRO.JPG",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10028",
@@ -222,11 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10043",
       nombre: "AGUA BRISA MANZANA 1.5 LITROS",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA BRISA MANZANA 1.5 LITROS.png",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10044",
@@ -291,11 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10056",
       nombre: "MR TEA 500",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/MR TEA 500.png",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10057",
@@ -370,20 +354,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10071",
       nombre: "GASEOSA POOL 250",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/GASEOSA POOL 250.png",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10072",
       nombre: "AGUA BRISA MANZANA 600",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA BRISA MANZANA 600.jpeg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10073",
@@ -458,11 +434,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10087",
       nombre: "JUGO CIFRUT 400",
-<<<<<<< HEAD
-      imagen: "cataImagesProductos/JUGO CIFRUT 400.jpg",
-=======
       imagen: "ImagesProductos/JUGO CIFRUT 400.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10088",
@@ -578,7 +550,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10111",
       nombre: "AGUILON CAJA",
-      imagen: "",
+      imagen: "ImagesProductos/AGUILON CAJA.jpg",
     },
     {
       codigo: "10112",
@@ -588,29 +560,17 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10113",
       nombre: "POKER CAJA",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/POKER CAJA.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10114",
       nombre: "COCA COLA CAJA 350",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/COCA COLA CAJA 350.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10115",
       nombre: "COCA COLA ZERO CAJA 350",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/COCA COLA ZERO CAJA 350.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10116",
@@ -630,11 +590,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10119",
       nombre: "GASEOSA PREMIO CAJA 350",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/GASEOSA PREMIO CAJA 350.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10120",
@@ -644,96 +600,54 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10121",
       nombre: "GASEOSA SPRITE CAJA 350",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/GASEOSA SPRITE CAJA 350.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10122",
       nombre: "GASEOSA POSTOBON CAJA 350",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/GASEOSA POSTOBON CAJA 350.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10123",
       nombre: "SODA BRETAÑA CAJA 350",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/SODA BRETAÑA CAJA.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10124",
       nombre: "TUTI FRUTI CAJA 250",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/TUTI FRUTI CAJA 250.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10125",
       nombre: "POKER LATON 473",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/POKER LATON 473.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10126",
       nombre: "AGUA POOL CON GAS",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA POOL CON GAS.jpeg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10127",
       nombre: "FRUTIÑO 2 LITROS",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/FRUTIÑO 2 LITROS.JPG",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10128",
       nombre: "AGUA SABORIZADA POOL 600",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA SABORIZADA POOL 600.png",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10129",
       nombre: "AGUA CON GAS POOL 600",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA  CON GAS POOL 600.jpeg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10130",
       nombre: "SUNTEA",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-    },
-    { codigo: "10131", nombre: "BOKA", imagen: "ImagesProductos/default.jpg" },
-=======
       imagen: "ImagesProductos/SUNTEA.jpg",
     },
     { codigo: "10131", nombre: "BOKA", imagen: "ImagesProductos/BOKA.jpg" },
->>>>>>> c7c9137 (Actualizacion)
     {
       codigo: "10132",
       nombre: "BONICE",
@@ -747,57 +661,32 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10134",
       nombre: "COCA COLA 1 LITRO",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/COCA COLA 1 LITRO.png",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10135",
       nombre: "SODA HATSU 300",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-    },
-    {
-      codigo: "10136",
-      nombre: "TEE HATSU 400",
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/SODA HATSU 300.png",
     },
     {
       codigo: "10136",
       nombre: "TEA HATSU 400",
       imagen: "ImagesProductos/TEA HATSU 400.jpeg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10137",
       nombre: "AGUA SABORIZADA POOL 300",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA SABORIZADA POOL 300.png",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10138",
       nombre: "AGUA MANANTIAL 600",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA MANANTIAL 600.jpeg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10139",
       nombre: "BUDWEISER LATA",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/BUDWEISER LATA.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10140",
@@ -807,74 +696,42 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10141",
       nombre: "DEL VALLE 188",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/DEL VALLE 188.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10142",
       nombre: "DEL VALLE 2.5",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/DEL VALLE 2.5.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10143",
       nombre: "RED BULL 250",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/RED BULL 250.JPG",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10145",
       nombre: "GASEOSA KOLA ROMAN 400",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/GASEOSA KOLA ROMAN 400.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10146",
       nombre: "STELLA SIX PACK",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/STELLA SIX PACK.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10148",
       nombre: "AGUA BRISA 280",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA BRISA 280.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10147",
       nombre: "AGUA BRISA 1 LITRO",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA BRISA 1 LITRO.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10149",
       nombre: "AGUA BRISA 600",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA BRISA 600.png",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10150",
@@ -884,57 +741,32 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10151",
       nombre: "FUZETEA 400",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/FUZETEA 400.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "10152",
       nombre: "POWER 500",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/POWER 500.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "44548",
       nombre: "SODA SWEEP 400",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/SODA SWEEP 400.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "5452456",
       nombre: "AGUA BRISA BIDON",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-    },
-    {
-      codigo: "54328",
-      nombre: "AQUA POSTOBON 400",
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/AGUA BRISA BIDON.jpg",
     },
     {
       codigo: "54328",
       nombre: "ACQUA POSTOBON 400",
       imagen: "ImagesProductos/ACQUA POSTOBON 400.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
     {
       codigo: "3655",
       nombre: "BIDON AQUARELA 5 LITROS ",
-<<<<<<< HEAD
-      imagen: "ImagesProductos/default.jpg",
-=======
       imagen: "ImagesProductos/BIDON AQUARELA 5 LITROS.jpg",
->>>>>>> c7c9137 (Actualizacion)
     },
   ];
   productos.sort((a, b) => a.nombre.localeCompare(b.nombre));
