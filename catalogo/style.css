@@ -411,3 +411,11 @@ button {
   background-color: #e65100;
   transform: scale(1.1);
 }
+.footer {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 40px;
+  font-weight: bold;
+}
