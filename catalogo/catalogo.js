@@ -850,31 +850,31 @@ document.addEventListener("DOMContentLoaded", () => {
     actualizarCarrito();
   }
 
-  // Enviar el pedido a WhatsApp
-  document.getElementById("enviar-whatsapp").addEventListener("click", () => {
-    let nombre = document.getElementById("nombre").value;
-    let direccion = document.getElementById("direccion").value;
-    let telefono = document.getElementById("telefono").value;
-    if (!nombre || !direccion || !telefono) {
-      alert("Por favor, complete todos los campos");
-      return;
+document.getElementById("enviar-whatsapp").addEventListener("click", () => {
+  let nombre = document.getElementById("nombre").value.trim();
+  let direccion = document.getElementById("direccion").value.trim();
+  let telefono = document.getElementById("telefono").value.trim();
+
+  if (!nombre) {
+    alert("Por favor, ingrese su nombre.");
+    return;
+  }
+
+  let mensaje = "*Pedido de Productos:*\n\n";
+  carrito.forEach((producto, index) => {
+    mensaje += `${index + 1}. [${producto.codigo}] ${producto.nombre} x${producto.cantidad}`;
+    if (producto.nota) {
+      mensaje += ` - Nota: ${producto.nota}`;
     }
-    let mensaje = "*Pedido de Productos:*\n\n";
-    carrito.forEach((producto, index) => {
-      mensaje += `${index + 1}. [${producto.codigo}] ${producto.nombre} x${
-        producto.cantidad
-      }`;
-      if (producto.nota) {
-        mensaje += ` - Nota: ${producto.nota}`;
-      }
-      mensaje += "\n";
-    });
-    mensaje += `\n*Cliente:* ${nombre}\n📍 Dirección: ${direccion}\n📞 Teléfono: ${telefono}`;
-    let url = `https://wa.me/123456789?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, "_blank");
+    mensaje += "\n";
   });
 
-  document.getElementById("toggle-carrito").addEventListener("click", () => {
-    document.getElementById("carrito-container").classList.toggle("oculto");
-  });
+  mensaje += `\n*Cliente:* ${nombre}`;
+  if (direccion) mensaje += `\n📍 Dirección: ${direccion}`;
+  if (telefono) mensaje += `\n📞 Teléfono: ${telefono}`;
+
+  let url = `https://wa.me/123456789?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
+});
+
 });
