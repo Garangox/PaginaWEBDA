@@ -6,6 +6,9 @@
     <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+<button id="boton-ir-carrito" title="Ir al carrito">🛒</button>
+
+
   <body>
     <header class="header">
       <div class="nav-container">
@@ -26,11 +29,11 @@
       <div class="formulario-carrito">
         <h3>Información del Cliente</h3>
         <form id="formulario-pedido">
-          <label for="nombre">Nombre:</label>
+          <label for="nombre">Nombre: Obligatorio</label>
           <input type="text" id="nombre" required />
-          <label for="direccion">Dirección:</label>
+          <label for="direccion">Dirección: Opcional</label>
           <input type="text" id="direccion" required />
-          <label for="telefono">Teléfono:</label>
+          <label for="telefono">Teléfono: Opcional</label>
           <input type="tel" id="telefono" required />
           <button type="button" id="enviar-whatsapp">Enviar a WhatsApp</button>
         </form>
@@ -68,5 +71,12 @@
           });
         });
     </script>
+
+    <script>
+  document.getElementById("boton-ir-carrito").addEventListener("click", () => {
+    document.querySelector(".carrito-flex").scrollIntoView({ behavior: "smooth" });
+  });
+</script>
+
   </body>
 </html>
