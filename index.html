@@ -7,22 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<header class="header">
-  <div class="nav-container">
+    <header class="header">
+      <div class="nav-container">
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
 
-    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-
-    <nav class="navbar" id="navbar">
-      <a href="./catalogo/catalogo.html" class="catalogo-btn">Catálogo</a>
-      <a href="#inicio">Inicio</a>
-      <a href="#quienes-somos">Quiénes Somos</a>
-      <a href="#contacto">Contáctanos</a>
-    </nav>
-  </div>
-</header>
-
-
-
+        <nav class="navbar" id="navbar">
+          <a href="./catalogo/catalogo.html" class="catalogo-btn">Catálogo</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#quienes-somos">Quiénes Somos</a>
+          <a href="#contacto">Contáctanos</a>
+        </nav>
+      </div>
+    </header>
 
     <div id="quienes-somos" class="section">
       <h2>Quiénes Somos</h2>
@@ -30,20 +26,30 @@
         <img src="images/Imagen2.jpg" alt="" />
       </div>
       <p>
-        Somos una empresa dedicada a la distribución de refrescos de alta
-        calidad.
+        En Distribuidora Arenales creemos que un buen servicio no se improvisa:
+        se construye con compromiso, agilidad y cercanía. Nos especializamos en
+        la comercialización y entrega oportuna de bebidas de marcas reconocidas
+        como Coca-Cola, Postobón, Pool y otras líneas de consumo masivo que
+        hacen parte del día a día de nuestros clientes. Nuestra labor va más
+        allá de distribuir productos; acompañamos a tenderos, negocios y puntos
+        de venta para que nunca les falte inventario, adaptándonos a sus ritmos
+        y necesidades. Nos mueve la eficiencia, la confianza y el deseo de
+        aportar al crecimiento comercial de cada uno de nuestros aliados. Con un
+        equipo comprometido y procesos enfocados en la rapidez y el buen trato,
+        nos consolidamos como una solución logística ágil, confiable y hecha a
+        la medida del comercio local.
       </p>
     </div>
 
     <div id="contacto" class="section">
       <h2>Contáctanos</h2>
-      <p>Email: contacto@distribuidora.com</p>
-      <p>Teléfono: +123 456 789</p>
+      <p>Email: distribuidoraarenalessro@gmail.com</p>
+      <p>Teléfono: 3242817353</p>
     </div>
 
     <div id="ubicacion" class="section">
       <h2>Ubicación</h2>
-      <p>Nos encontramos en la calle principal #123, Ciudad.</p>
+      <p>Nos encontramos en la salida Santa Rosa de osos, vía Santa Rosa de osos - Entrerrios 23-17, Barrio arenales.</p>
       <div class="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1735.0222506908835!2d-75.46235580291159!3d6.639360703158004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44444329c074ab%3A0x6dc5ca1ff18efd06!2sSanta%20Rosa%20de%20Osos%2C%20Antioquia!5e1!3m2!1ses-419!2sco!4v1746553097834!5m2!1ses-419!2sco"
@@ -63,16 +69,17 @@
   </body>
 
   <script>
-  const toggle = document.getElementById("menu-toggle");
-  const nav = document.getElementById("navbar");
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("navbar");
 
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("show");
-  });
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
 
-  document.querySelectorAll(".navbar a").forEach((link) =>
-    link.addEventListener("click", () => nav.classList.remove("show"))
-  );
-</script>
-
+    document
+      .querySelectorAll(".navbar a")
+      .forEach((link) =>
+        link.addEventListener("click", () => nav.classList.remove("show"))
+      );
+  </script>
 </html>
