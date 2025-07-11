@@ -169,7 +169,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e0a96d; 
+  background-color: #e0a96d;
   padding: 10px 12px;
   border-radius: 8px;
   font-size: 14px;
@@ -185,7 +185,7 @@ button {
 }
 
 #lista-carrito .btn-eliminar {
-  background-color: #c0392b; 
+  background-color: #c0392b;
   border: none;
   color: white;
   font-weight: bold;
@@ -200,9 +200,8 @@ button {
 }
 
 #lista-carrito .btn-eliminar:hover {
-  background-color: #992d22; 
+  background-color: #992d22;
 }
-
 
 .formulario-carrito {
   flex: 1;
@@ -291,7 +290,6 @@ button {
     width: 95%;
   }
 }
-
 
 @media (max-width: 768px) {
   .carrito-flex {
@@ -392,7 +390,7 @@ button {
 }
 #boton-ir-carrito {
   position: fixed;
-  bottom: 100px; 
+  bottom: 100px;
   right: 20px;
   width: 55px;
   height: 55px;
@@ -411,6 +409,7 @@ button {
   background-color: #e65100;
   transform: scale(1.1);
 }
+
 .footer {
   background-color: orange;
   color: white;
@@ -419,3 +418,43 @@ button {
   margin-top: 40px;
   font-weight: bold;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cerrar {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn-politica {
+  margin: 10px auto;
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  max-width: 90%;
+}
+
