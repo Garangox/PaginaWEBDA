@@ -6,8 +6,7 @@
     <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-<button id="boton-ir-carrito" title="Ir al carrito">🛒</button>
-
+  <button id="boton-ir-carrito" title="Ir al carrito">🛒</button>
 
   <body>
     <header class="header">
@@ -35,6 +34,10 @@
           <input type="text" id="direccion" required />
           <label for="telefono">Teléfono: Opcional</label>
           <input type="tel" id="telefono" required />
+          <button type="button" id="ver-politica" class="btn-politica">
+            Ver Política de Tratamiento de Datos
+          </button>
+
           <button type="button" id="enviar-whatsapp">Enviar a WhatsApp</button>
         </form>
       </div>
@@ -73,12 +76,44 @@
     </script>
 
     <script>
-  document.getElementById("boton-ir-carrito").addEventListener("click", () => {
-    document.querySelector(".carrito-flex").scrollIntoView({ behavior: "smooth" });
-  });
-</script>
+      document
+        .getElementById("boton-ir-carrito")
+        .addEventListener("click", () => {
+          document
+            .querySelector(".carrito-flex")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+
     <footer class="footer">
       <p>&copy; 2025 Distribuidora Arenales. Todos los derechos reservados.</p>
     </footer>
+    <div id="modal-politica" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar">&times;</span>
+        <h2>Política de Tratamiento de Datos</h2>
+        <p>
+          Al llenar este formulario, usted acepta que sus datos personales serán
+          utilizados únicamente con fines de contacto y entrega de productos por
+          parte de Distribuidora Arenales. No compartimos sus datos con
+          terceros.
+        </p>
+      </div>
+    </div>
+    <script>
+      document.getElementById("ver-politica").addEventListener("click", () => {
+        document.getElementById("modal-politica").style.display = "block";
+      });
+
+      document.querySelector(".cerrar").addEventListener("click", () => {
+        document.getElementById("modal-politica").style.display = "none";
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target == document.getElementById("modal-politica")) {
+          document.getElementById("modal-politica").style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
