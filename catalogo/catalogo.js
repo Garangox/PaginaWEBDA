@@ -873,7 +873,7 @@ document.getElementById("enviar-whatsapp").addEventListener("click", () => {
   if (direccion) mensaje += `\n📍 Dirección: ${direccion}`;
   if (telefono) mensaje += `\n📞 Teléfono: ${telefono}`;
 
-  let url = `https://wa.me/123456789?text=${encodeURIComponent(mensaje)}`;
+  let url = `https://wa.me/+573242817353?text=${encodeURIComponent(mensaje)}`;
   window.open(url, "_blank");
 });
 
