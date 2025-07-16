@@ -6,24 +6,29 @@
     <title>Distribuidora de Refrescos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+ 
   <body>
     <header class="header">
       <div class="nav-container">
+        
         <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <img src="./images/Imagen1.jpg" alt="logo" class="logo">
 
         <nav class="navbar" id="navbar">
           <a href="./catalogo/catalogo.html" class="catalogo-btn">Catálogo</a>
-          <a href="#inicio">Inicio</a>
-          <a href="#quienes-somos">Quiénes Somos</a>
-          <a href="#contacto">Contáctanos</a>
+        
         </nav>
       </div>
     </header>
 
     <div id="quienes-somos" class="section">
       <h2>Quiénes Somos</h2>
-      <div class="imagen">
-        <img src="images/Imagen2.jpg" alt="" />
+      <div class="carrousel">
+        <div class="slides">
+          <div class="slide"> <img src="./images/Imagen2.jpg" alt="imagen1"></div>
+          <div class="slide"> <img src="./images/DA2.jpg" alt="imagen2"></div>
+          <div class="slide"> <img src="./images/D3.jpg" alt="imagen1"></div>
+        </div>
       </div>
       <p>
         En Distribuidora Arenales creemos que un buen servicio no se improvisa:
@@ -82,4 +87,6 @@
         link.addEventListener("click", () => nav.classList.remove("show"))
       );
   </script>
+  
+  
 </html>
