@@ -575,12 +575,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10116",
       nombre: "COCA COLA CAJA 8OZ",
-      imagen: "ImagesProductos/default.jpg",
+      imagen: "ImagesProductos/COCA COLA CAJA 80Z.webp",
     },
     {
       codigo: "10117",
       nombre: "GASEOSA QUATRO CAJA 350",
-      imagen: "ImagesProductos/default.jpg",
+      imagen: "ImagesProductos/GASEOSA QUATRO CAJA 350.jpeg",
     },
     {
       codigo: "10118",
@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10120",
       nombre: "GASEOSA PREMIO CAJA 8OZ",
-      imagen: "ImagesProductos/default.jpg",
+      imagen: "ImagesProductos/GASEOSA PREMIO CAJA 80Z.webp",
     },
     {
       codigo: "10121",
@@ -651,12 +651,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       codigo: "10132",
       nombre: "BONICE",
-      imagen: "ImagesProductos/default.jpg",
+      imagen: "ImagesProductos/BONICE.webp",
     },
     {
       codigo: "10133",
       nombre: "BONICE DOBLE",
-      imagen: "ImagesProductos/default.jpg",
+      imagen: "ImagesProductos/BONICE DOBLE.webp",
     },
     {
       codigo: "10134",
