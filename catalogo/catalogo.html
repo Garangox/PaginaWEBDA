@@ -33,7 +33,16 @@
           <label for="direccion">Dirección: Opcional</label>
           <input type="text" id="direccion" required />
           <label for="telefono">Teléfono: Opcional</label>
-          <input type="tel" id="telefono" required />
+          <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            required
+            oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
+          />
+
           <button type="button" id="ver-politica" class="btn-politica">
             Ver Política de Tratamiento de Datos
           </button>
